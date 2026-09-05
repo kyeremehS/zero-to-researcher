@@ -61,8 +61,8 @@ class Value:
         build_topo(self)
 
         self.grad = 1
-        for v in reversed(topo):
-            v._backward()
+        for x in reversed(topo):
+            x._backward()
         
 
 a = Value(-0.06)
